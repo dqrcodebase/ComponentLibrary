@@ -1,0 +1,148 @@
+/* 文字弹幕 */
+.text_bullet{
+    position: absolute;
+    padding: 5px;
+    word-break: keep-all;
+    font-size: 22px;
+    will-change: transform;
+}
+/* 坐骑 */
+.vehicle{
+    width: 400px;
+    height: 45px;
+    color: #ffffff;
+    line-height: 45px;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    z-index: 9;
+    will-change: transform;
+}
+.vehicle .user-name{
+    color: #FFB93B;
+    margin-right: 10px;
+}
+.vehicle .vehicle-wrap{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    padding-left: 20px;
+}
+.vehicle img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 礼物弹幕 */
+.gift-danmu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 12px;
+    width: 334px;
+    padding: 3px 5px;
+    border-radius: 20px 0 0 20px;
+    will-change: transform;
+}
+.gift-danmu .user-name{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.gift-danmu.luxuryGift  .user-name{
+    padding:0
+}
+.gift-danmu .send{
+    margin: 0 10px;
+}
+.gift-danmu .gift-img-wrap{
+    width: 32px;
+    height: 26px;
+    position: relative;
+    margin-left: 10px;
+}
+.gift-danmu .gift-img-wrap .gift-img{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top:-3px
+}
+.gift-danmu .ride{
+    width: 12px;
+    height: 12px;
+    vertical-align: sub;
+    margin: 0 5px;
+}
+.gift-danmu .gift-num{
+    width: 12px;
+    height: 21px;
+}
+.gift-danmu .gift-num-wrap{
+    display: flex;
+    padding-right: 40px;
+}
+.gift-danmu img{
+    width: 100%;
+    height: 100%;
+}
+.gift-danmu .user-img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+}
+.gift-danmu .user-img img{
+    border-radius: 50%;
+}
+.gift-danmu.luxuryGift .gift-img-wrap{
+    margin-left: 30px;
+    width: 48px;
+    height: 40px;
+}
+.gift-danmu.luxuryGift .gift-img{
+    width: 48px;
+    height: 48px;
+}
+.gift-danmu.luxuryGift .send{
+    margin:0 20px 0 0 ;
+}
+.gift-danmu.luxuryGift .gift-img-wrap .gift-img{
+    top:-4px
+}
+
+/* 全平台通知 */
+.players .platform-bullet {
+    display: flex;
+    width: 538px;
+    height: 40px;
+    line-height: 40px;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
+    padding: 10px;
+    box-sizing: border-box;
+    will-change: transform;
+}
+.platform-bullet .gift-img-wrap{
+    width: 48px;
+    height: 48px;
+}
+.platform-bullet .gift-img-wrap img{
+    width: 100%;
+    height: 100%;
+}
+.platform-bullet .give-msg{
+    font-size: 12px;
+}
+.platform-bullet .active-msg{
+    font-size: 14px;
+    color: #FFB93B;
+}
+.platform-bullet .to-live{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+}
